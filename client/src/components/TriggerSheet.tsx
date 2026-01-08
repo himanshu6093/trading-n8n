@@ -1,16 +1,13 @@
 import type { NodeKind, NodeMetaData } from "./CreateWorkflow";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
 } from "@/components/ui/sheet";
 
 import {
@@ -18,7 +15,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -40,7 +36,7 @@ const SUPPORTED_TRIGGERS = [
   },
 ];
 
-const SUPPORTED_ASSETS = ["SOL", "BTC", "ETH"];
+export const SUPPORTED_ASSETS = ["SOL", "BTC", "ETH"];
 
 export const TriggerSheet = ({
   onSelect,
